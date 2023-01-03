@@ -36,7 +36,7 @@ formReady(() => {
 	let twitchChannelId = ""; // Variable to hold Twitch channel id
 
 	const defaultStreamURL = ""; // Default stream URL
-	const defaultGameURL = "https://jackbox.tv"; // Default game URL
+	const defaultGameURL = "https://jackbox.fun"; // Default game URL
 	const defaultPlayerClasses = playerElement.getAttribute("class"); // Default classes for #player from index.html
 	const defaultStreamPaneClasses = streamPaneElement.getAttribute("class"); // Default classes for #streamPane from index.html
 	const defaultGamePaneClasses = gamePaneElement.getAttribute("class"); // Default classes for #gamePane from index.html
@@ -285,7 +285,7 @@ formReady(() => {
 			// If it was because the user denied access
 			if (getURLParam("error_description") === "The user denied you access") {
 				// Let them know
-				alert("To find a random stream or use the followed streams list, please authorize Twitch access.");
+				alert("Чтобы найти случайного стримера или смотреть из списка отслеживаемых, пожалуйста, авторизуйтесь в Twitch.");
 
 				// If the afterAuthAction is "random"
 				if (localStorage.getItem("rjp-afterAuthAction") === "random") {
@@ -860,7 +860,7 @@ formReady(() => {
 			twitchGameIds = Array.from(gameIdsFileJSON.twitch); // Convert to an array and save
 		} else {
 			console.error("HTTP-Error:" + gameIdsFile.status); // Log error
-			alert("Hmm...couldn't retrieve game list. Please try again."); // Ask user to try again
+			alert("Хм...не удалось получть список игр. Попробуйте позже."); // Ask user to try again
 
 			// Remove event listener for when the page is reloaded in order to stop the confirmUnload dialog
 			window.removeEventListener("beforeunload", confirmUnload);

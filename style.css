@@ -6217,12 +6217,20 @@ video {
   height: 4rem;
 }
 
+.h-18 {
+  height: 4.5rem;
+}
+
 .h-20 {
   height: 5rem;
 }
 
 .h-24 {
   height: 6rem;
+}
+
+.h-30 {
+  height: 7.5rem;
 }
 
 .h-32 {
