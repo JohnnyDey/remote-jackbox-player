@@ -1,29 +1,13 @@
 # remote-jackbox-player
 
-Play Jackbox games remotely using one device/browser window!
+ Адаптация remote-jackbox-player для русскоязычных пользователей.
 
-Try it on your mobile device 📲
+[Ссылка на приложение](https://johnnydey.github.io/remote-jackbox-player/)
 
-[Launch ↗️](https://remote-jackbox-player.isaacyakl.com)
+Release notes: \
+Первод интерфейса на русский. \
+Сайт jackbox.tv заменен на jackbox.fun т.к. позволяет использовать кириллицу. 
 
-Distributed under the [MIT License](https://isaacyakl.github.io/remote-jackbox-player/LICENSE).
+[Оригинальный исходный код](https://github.com/isaacyakl/remote-jackbox-player) \
+[Оригинальное приложение](https://remote-jackbox-player.isaacyakl.com)
 
-Show support by following me on [Twitter](https://www.twitter.com/isaacyakl) and [GitHub](https://github.com/isaacyakl).
-
-Found a 🐛? Create a [new issue](https://github.com/isaacyakl/remote-jackbox-player/issues/new).
-
-## Unsupported Stream platforms
-
-| Platform           | Reason                                   |
-| ------------------ | ---------------------------------------- |
-| Steam Broadcasting | Stream delay, Lack of iOS device support |
-
-## To-Do
-
--  Utilize Babel.js for wider support/polyfilling
--  Animate icons on hover
--  Remove extra white space at bottom in swap view
--  Add support for YouTube Gaming and Facebook Gaming
--  Add left-hand / right-hand control orientation option
--  Detect lag in stream and reload it automagically
--  Add custom confirmation dialog for trying to reload game pane
