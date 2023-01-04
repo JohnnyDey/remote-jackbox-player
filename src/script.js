@@ -242,20 +242,20 @@ formReady(() => {
 			if (streamURL != "") {
 				document.title = `${documentTitle} - ${streamURL}`; // Update document title
 				playerURL.searchParams.set("streamURL", streamURLElement.value); // Add stream URL as a param to the player URL
-				window.history.pushState(null, null, "?streamURL=" + encodeURIComponent(streamURL)); // Add the streamURL to the window URL and log in history
+				window.history.pushState(null, null, "/remote-jackbox-player?streamURL=" + encodeURIComponent(streamURL)); // Add the streamURL to the window URL and log in history
 			}
 			// Else it is empty
 			else {
 				document.title = `${documentTitle}`; // Update document title
 				playerURL.searchParams.delete("streamURL"); // Delete streamURL param from the player URL
-				window.history.pushState(null, null, "/"); // Remove the streamURL param and log in history
+				window.history.pushState(null, null, "/remote-jackbox-player"); // Remove the streamURL param and log in history
 			}
 		}
 		// Else if it is part of "https://" make sure the streamURL param is not there
 		else if (streamURLElement.value.toString().length < 9) {
 			document.title = `${documentTitle}`; // Update document title
 			playerURL.searchParams.delete("streamURL"); // Delete streamURL param from the player URL
-			window.history.pushState(null, null, "/"); // Remove the streamURL param and log in history
+			window.history.pushState(null, null, "/remote-jackbox-player"); // Remove the streamURL param and log in history
 		}
 	}
 
