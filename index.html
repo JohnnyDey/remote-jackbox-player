@@ -42,12 +42,12 @@
 					</p>
 					<p class="text-center mb-4">
 						<i class="fas fa-share transform -rotate-90 mr-2"></i>
-						Введи или выбери стрим в поле сверху.
+						Вставь ссылку на стримера или выбери стримера в поле сверху (из списка отслеживаемых).
 					</p>
 					<p class="text-center font-bold mb-4 text-black">
 						ЗАТЕМ
 					</p>
-					<p class="text-center mb-4"><i class="fas fa-search mr-2"></i> Найди или попроси 4-значный код комнаты.</p>
+					<p class="text-center mb-4"><i class="fas fa-search mr-2"></i> Найди на экране или попроси 4-значный код комнаты.</p>
 					<p class="text-center mb-4"><i class="fas fa-keyboard mr-2"></i> Введи код и имя (иногда требуется авторизация через Twitch).</p>
 					<p class="text-center mb-4"><i class="fas fa-gamepad mr-2"></i> Играй с друзьями!</p>
 
@@ -98,7 +98,7 @@
 						<span id="shareText" class="flex-none text-center align-middle transition-all duration-1000 ease-in-out w-0 h-10 rounded-r shadow-inner bg-green-300 overflow-hidden" role="alert">URL скопирован!</span>
 					</div>
 					<div id="streamURLBarTitleHelpText" class="relative flex flex-row flex-no-wrap justify-start align-middle transition-all duration-1000 ease-in-out z-50 top-0 left-0 text-2xl w-full h-0" role="navigation">
-						<span class="flex-none titleHelpText verticalText w-8 h-18 mt-1 ml-1 align-middle opacity-0 transition-all duration-500 ease-in-out shadow-lg py-1 rounded-b rounded-tr text-black shadow-inner text-xl overflow-hidden">Скрыть</span>
+						<span class="flex-none titleHelpText verticalText w-8 h-20 mt-1 ml-1 align-middle opacity-0 transition-all duration-500 ease-in-out shadow-lg py-1 rounded-b rounded-tr text-black shadow-inner text-xl overflow-hidden">Скрыть</span>
 						<span class="flex-grow titleHelpText transition-all duration-500 ease-in-out h-0 overflow-hidden"></span>
 						<span class="flex-none titleHelpText verticalText w-8 h-30 mt-1 mr-1 align-middle opacity-0 transition-all duration-500 ease-in-out shadow-lg py-1 rounded-b rounded-tl text-black shadow-inner text-xl overflow-hidden">Случайный</span>
 						<span class="flex-none titleHelpText verticalText w-8 h-30 mt-1 mr-1 align-middle opacity-0 transition-all duration-500 ease-in-out shadow-lg py-1 rounded-b rounded-tl text-black shadow-inner text-xl overflow-hidden">Поделиться</span>
@@ -116,19 +116,19 @@
 							<button id="howToButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg rounded-tr">
 								<i class="fas fa-question"></i>
 							</button>
-							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Помогите!</span>
+							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Справка</span>
 						</div>
 						<div class="menuItem flex flex-row">
 							<button id="showStreamURLBarButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg">
 								<i class="fas fa-search"></i>
 							</button>
-							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Показать строку URL</span>
+							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Показать URL строку</span>
 						</div>
 						<div class="menuItem flex flex-row">
 							<button id="setupSwapViewButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg">
 								<i class="fas fa-exchange-alt"></i>
 							</button>
-							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Поменять экран</span>
+							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Сменить экран</span>
 						</div>
 						<div class="menuItem flex flex-row">
 							<button id="setupSplitViewButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg">
@@ -140,13 +140,13 @@
 							<button id="setupScrollViewButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg">
 								<i class="fas fa-arrows-alt-v"></i>
 							</button>
-							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Скролить экраны</span>
+							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Скроллинг экранов</span>
 						</div>
 						<div class="menuItem flex flex-row">
 							<button id="setupSwipeViewButton" class="flex-none bg-white text-center align-middle w-10 h-10 shadow-lg">
 								<i class="fas fa-arrows-alt-h"></i>
 							</button>
-							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Свайпать экраны</span>
+							<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative ml-1 shadow-lg px-1 rounded-r rounded-tl text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Свайп экранов</span>
 						</div>
 					</div>
 					<button id="menuButton" title="Close menu" class="control bg-white text-center w-10 h-10 rounded-br bg-teal-300 shadow-inner shadow-lg">
@@ -156,13 +156,13 @@
 				<!-- Stream Controls -->
 				<div id="streamControls" class="controls flex flex-col flex-no-wrap justify-end content-end absolute rounded-l shadow-lg z-50 right-0 text-2xl w-10" role="menubar">
 					<div class="control swapViewButtonWrapper flex flex-row justify-end content-end lg:hidden">
-						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Поменять экран</span>
+						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Сменить экран</span>
 						<button class="flex-none swapViewButton bg-white text-center align-middle w-10 h-10 rounded-tl">
 							<i class="fas fa-exchange-alt"></i>
 						</button>
 					</div>
 					<div class="control flex flex-row justify-end content-end">
-						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Перезагрузить стрим</span>
+						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Обновить стрим</span>
 						<button id="reloadStreamButton" class="flex-none bg-white text-center w-10 h-10 rounded-bl lg:rounded-l">
 							<i class="fas fa-redo"></i>
 						</button>
@@ -182,7 +182,7 @@
 						</button>
 					</div>
 					<div class="control flex flex-row justify-end content-end">
-						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Перезагрузить игру</span>
+						<span class="flex-none titleHelpText opacity-0 transition-all duration-500 ease-in-out relative mr-1 shadow-lg px-1 rounded-l rounded-tr text-black shadow-inner text-xl h-8 mt-1 overflow-hidden">Обновить игру</span>
 						<button id="reloadGameButton" class="flex-none bg-white text-center w-10 h-10 rounded-bl lg:rounded-l">
 							<i class="fas fa-redo"></i>
 						</button>
