@@ -220,6 +220,8 @@ formReady(() => {
 
 	// Function for pulling hash parameters from the URL
 	function getURLHashParam(query) {
+	console.log("parse");
+	console.log("query");
 		let parameter = query;
 		parameter = parameter.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
 		let regex = new RegExp("[\\#|&]" + parameter + "=([^&#]*)");
