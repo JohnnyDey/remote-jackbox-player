@@ -852,7 +852,7 @@ formReady(() => {
 
 	// Function for getting Twitch game ids from file
 	async function getTwitchGameIds() {
-		let gameIdsFile = await fetch("feature-random-stream-game-ids.json"); // Retrieve Twitch game ids json file
+		let gameIdsFile = await fetch("/remote-jackbox-player/feature-random-stream-game-ids.json"); // Retrieve Twitch game ids json file
 
 		// If the game ids json file was retrieved successfully
 		if (gameIdsFile.ok) {
@@ -1223,7 +1223,7 @@ formReady(() => {
 
 	// Function for retrieving web app client ids
 	async function retrieveClientIds() {
-		let retrieveClientIds = await fetch("client-ids.json"); // Get contents of json file
+		let retrieveClientIds = await fetch("/remote-jackbox-player/client-ids.json"); // Get contents of json file
 
 		// If the json file was retrieved successfully
 		if (retrieveClientIds.ok) {
