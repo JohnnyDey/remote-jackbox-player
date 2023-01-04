@@ -885,6 +885,8 @@ formReady(() => {
 		window.removeEventListener("beforeunload", confirmUnload);
 
 		// Send the user to get an auth token
+		console.log("щас чето будет")
+		console.log(twitchClientID)
 		document.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=${twitchClientID}&redirect_uri=${window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:5500/" : window.location.origin + window.location.pathname}&response_type=token`;
 	}
 
@@ -1223,7 +1225,9 @@ formReady(() => {
 
 	// Function for retrieving web app client ids
 	async function retrieveClientIds() {
+	console.log("retrieveClientIds");
 		let retrieveClientIds = await fetch("/remote-jackbox-player/client-ids.json"); // Get contents of json file
+	console.log(retrieveClientIds);
 
 		// If the json file was retrieved successfully
 		if (retrieveClientIds.ok) {
